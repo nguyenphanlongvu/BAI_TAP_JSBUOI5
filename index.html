@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả thi đại học</title>
+  </head>
+  <body>
+    <h1>Kết quả thi đại học</h1>
+
+    <label for="standardScore">Điểm chuẩn:</label>
+    <input type="number" id="standardScore" min="0" max="90" /><br />
+
+    <label for="subject1">Điểm môn 1:</label>
+    <input type="number" id="subject1" min="0" max="30" /><br />
+
+    <label for="subject2">Điểm môn 2:</label>
+    <input type="number" id="subject2" min="0" max="30" /><br />
+
+    <label for="subject3">Điểm môn 3:</label>
+    <input type="number" id="subject3" min="0" max="30" /><br />
+
+    <label for="areaScore">Điểm ưu tiên khu vực:</label>
+    <input type="number" id="areaScore" min="0" max="10" /><br />
+
+    <label for="targetScore">Điểm ưu tiên đối tượng:</label>
+    <input type="number" id="targetScore" min="0" max="10" /><br />
+
+    <button onclick="calculateResult()">Tính kết quả</button>
+    <p id="result"></p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
