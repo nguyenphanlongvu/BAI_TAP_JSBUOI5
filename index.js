@@ -1,3 +1,13 @@
+//bai 1
+
+
+
+
+
+
+
+
+
 function calculateResult() {
     var standardScore = parseFloat(document.getElementById("standardScore").value);
     var subject1 = parseFloat(document.getElementById("subject1").value);
@@ -18,4 +28,25 @@ function calculateResult() {
     } else {
         document.getElementById("result").textContent = "Bạn đã rớt";
     }
+}
+//bài 2
+function tinhTien() {
+    var hoVaTen = document.getElementById("hoVaTen").value*1 ;
+    var soKw = document.getElementById("soKw").value*1;
+    var tienTra = 0 ;
+    if (soKw < 50 ) {
+        tienTra = soKw * 500;
+
+    }else if (50 <soKw && soKw <100 ) {
+        tienTra = soKw * 650 ;
+    }else if (100 < soKw && soKw < 150) {
+        tienTra = soKw * 1100;
+    }else {
+        tienTra = soKw *1300 ;
+    }
+    document.getElementById("result1").textContent = `số tiền phải trả là : ${tienTra} VND`
+
+
+
+
 }
