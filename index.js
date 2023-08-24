@@ -1,13 +1,4 @@
 //bai 1
-
-
-
-
-
-
-
-
-
 function calculateResult() {
     var standardScore = parseFloat(document.getElementById("standardScore").value);
     var subject1 = parseFloat(document.getElementById("subject1").value);
@@ -88,7 +79,7 @@ function calculateTaxRate(taxableIncome) {
 //bài 4
 function toggleKetNoi() {
     var loaiKhachHang = document.getElementById("loaiKhachHang").value;
-    var soKetNoiInput = document.getElementById("soKetNoi");
+    var soKetNoiInput = document.getElementById("soKetNoi").value*1;
 
     if (loaiKhachHang === "nhaDan") {
         soKetNoiInput.disabled = true;
